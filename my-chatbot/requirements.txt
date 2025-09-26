@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+faiss-cpu
+sentence-transformers
+google-generativeai
+pytesseract
+pillow
+PyPDF2
+beautifulsoup4
+requests
