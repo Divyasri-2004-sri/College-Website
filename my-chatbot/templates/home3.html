@@ -670,83 +670,29 @@
             right: 10px;
         }
 
-        /* Campus Life Section */
-        .campus-life-section {
+        /* Campus Gallery Section */
+        .campus-gallery-section {
             padding: 5rem 0;
             background-color: white;
         }
 
-        .campus-life-container {
+        .campus-gallery-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 1rem;
         }
 
-        .campus-life-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .campus-life-card {
-            background-color: var(--bg-light);
-            border-radius: 10px;
+        .gallery-main-image {
+            position: relative;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
-        .campus-life-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .campus-life-image {
-            height: 200px;
-            overflow: hidden;
-        }
-
-        .campus-life-image img {
+        .responsive-image {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .campus-life-card:hover .campus-life-image img {
-            transform: scale(1.05);
-        }
-
-        .campus-life-content {
-            padding: 1.5rem;
-        }
-
-        .campus-life-title {
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-
-        .campus-life-description {
-            color: var(--text-dark);
-            margin-bottom: 1rem;
-        }
-
-        .campus-life-link {
-            color: var(--accent-color);
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            transition: transform 0.3s ease;
-        }
-
-        .campus-life-link:hover {
-            transform: translateX(5px);
-        }
-
-        .campus-life-link i {
-            margin-left: 5px;
+            height: auto;
+            display: block;
         }
 
         /* Footer */
@@ -1335,7 +1281,7 @@
             <div class="slider" id="teamSlider">
                 <div class="slide">
                     <div class="team-card">
-                        <img src="https://z-cdn-media.chatglm.cn/files/1f25e488-2f29-4e4d-9308-862631db119b_Screenshot%202025-09-24%20130022.png?auth_key=1790315897-5279f8249dfc4783bb96021a00c88da4-0-c9184e2019e7663e75f2086c2bd92bf4" alt="Dr.P.Krishna Rao" class="team-image">
+                        <img src="./Dr.P.Krishna Rao.png" alt="Dr.P.Krishna Rao" class="team-image">
                         <h3 class="team-name">Dr.P.Krishna Rao</h3>
                         <p class="team-position">Chairman, Ideal Institute of Technology, Kakinada</p>
                         <p class="team-description">Leading the institution with vision and dedication to excellence in education.</p>
@@ -1343,7 +1289,7 @@
                 </div>
                 <div class="slide">
                     <div class="team-card">
-                        <img src="https://z-cdn-media.chatglm.cn/files/1f25e488-2f29-4e4d-9308-862631db119b_Screenshot%202025-09-24%20130022.png?auth_key=1790315897-5279f8249dfc4783bb96021a00c88da4-0-c9184e2019e7663e75f2086c2bd92bf4" alt="Dr.N.S.Murthy" class="team-image">
+                        <img src="./Dr.N.S.Murthy.png" alt="Dr.N.S.Murthy" class="team-image">
                         <h3 class="team-name">Dr.N.S.Murthy</h3>
                         <p class="team-position">President, Ideal Institute of Technology, Kakinada</p>
                         <p class="team-description">Committed to fostering innovation and research in engineering education.</p>
@@ -1351,7 +1297,7 @@
                 </div>
                 <div class="slide">
                     <div class="team-card">
-                        <img src="https://z-cdn-media.chatglm.cn/files/1f25e488-2f29-4e4d-9308-862631db119b_Screenshot%202025-09-24%20130022.png?auth_key=1790315897-5279f8249dfc4783bb96021a00c88da4-0-c9184e2019e7663e75f2086c2bd92bf4" alt="Dr.P.Chiranjeevini Kumari" class="team-image">
+                        <img src="./Dr.P.Chiranjeevini Kumari.png" alt="Dr.P.Chiranjeevini Kumari" class="team-image">
                         <h3 class="team-name">Dr.P.Chiranjeevini Kumari</h3>
                         <p class="team-position">Secretary & Correspondent, Ideal Institute of Technology, Kakinada</p>
                         <p class="team-description">Dedicated to creating a nurturing environment for holistic student development.</p>
@@ -1359,7 +1305,7 @@
                 </div>
                 <div class="slide">
                     <div class="team-card">
-                        <img src="https://z-cdn-media.chatglm.cn/files/1f25e488-2f29-4e4d-9308-862631db119b_Screenshot%202025-09-24%20130022.png?auth_key=1790315897-5279f8249dfc4783bb96021a00c88da4-0-c9184e2019e7663e75f2086c2bd92bf4" alt="Dr.T.Srikant" class="team-image">
+                        <img src="./Dr.T.Srikant.png" alt="Dr.T.Srikant" class="team-image">
                         <h3 class="team-name">Dr.T.Srikant</h3>
                         <p class="team-position">Principal, Ideal Institute of Technology, Kakinada</p>
                         <p class="team-description">Focusing on academic excellence and industry-aligned curriculum development.</p>
@@ -1381,74 +1327,18 @@
         </div>
     </section>
 
-    <!-- Campus Life Section -->
-    <section class="campus-life-section">
-        <div class="campus-life-container">
-            <h2 class="section-title">CAMPUS LIFE</h2>
-            <div class="campus-life-grid">
-                <div class="campus-life-card">
-                    <div class="campus-life-image">
-                        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Library">
-                    </div>
-                    <div class="campus-life-content">
-                        <h3 class="campus-life-title">Modern Library</h3>
-                        <p class="campus-life-description">Access to thousands of books, journals, and digital resources in our state-of-the-art library.</p>
-                        <a href="#" class="campus-life-link">Explore More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="campus-life-card">
-                    <div class="campus-life-image">
-                        <img src="https://images.unsplash.com/photo-1581078426770-6cf87f279513?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Laboratories">
-                    </div>
-                    <div class="campus-life-content">
-                        <h3 class="campus-life-title">Advanced Laboratories</h3>
-                        <p class="campus-life-description">Well-equipped labs with modern equipment for hands-on learning and research.</p>
-                        <a href="#" class="campus-life-link">Explore More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="campus-life-card">
-                    <div class="campus-life-image">
-                        <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sports Complex">
-                    </div>
-                    <div class="campus-life-content">
-                        <h3 class="campus-life-title">Sports & Recreation</h3>
-                        <p class="campus-life-description">Facilities for various sports and recreational activities to promote physical fitness.</p>
-                        <a href="#" class="campus-life-link">Explore More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="campus-life-card">
-                    <div class="campus-life-image">
-                        <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hostel">
-                    </div>
-                    <div class="campus-life-content">
-                        <h3 class="campus-life-title">Comfortable Hostels</h3>
-                        <p class="campus-life-description">Safe and comfortable accommodation facilities with all necessary amenities.</p>
-                        <a href="#" class="campus-life-link">Explore More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="campus-life-card">
-                    <div class="campus-life-image">
-                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cafeteria">
-                    </div>
-                    <div class="campus-life-content">
-                        <h3 class="campus-life-title">Food Court</h3>
-                        <p class="campus-life-description">Hygienic and nutritious food options catering to diverse tastes and preferences.</p>
-                        <a href="#" class="campus-life-link">Explore More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="campus-life-card">
-                    <div class="campus-life-image">
-                        <img src="https://images.unsplash.com/photo-1523580836040-25c4d50ac8c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Auditorium">
-                    </div>
-                    <div class="campus-life-content">
-                        <h3 class="campus-life-title">Auditorium & Seminar Halls</h3>
-                        <p class="campus-life-description">Spacious venues for seminars, conferences, and cultural events.</p>
-                        <a href="#" class="campus-life-link">Explore More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
+    <!-- Campus Gallery Section -->
+    <section class="campus-gallery-section">
+        <div class="campus-gallery-container">
+            <h2 class="section-title">CAMPUS GALLERY</h2>
+            <div class="gallery-main-image">
+                <img src="./001.jpg" 
+                     alt="Campus Event Photo" 
+                     class="responsive-image">
             </div>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer>
@@ -1744,4 +1634,4 @@ chatBtnToggle.addEventListener('click', () => {
         }, 3000);
     </script>
 </body>
-</html>
+</html> 
